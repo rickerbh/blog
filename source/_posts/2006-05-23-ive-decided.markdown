@@ -1,0 +1,14 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2006-05-23 00:06:00'
+layout: post
+slug: ive-decided
+status: publish
+title: I've decided...
+wordpress_id: '87'
+? ''
+: - Uncategorized
+---
+
+<div><div><p>...I prefer the mystery of the anonymous subscriber.  It&#8217;s nice to know who is interested in what I have to say, but the mystery is more fun.  Of course, that isn&#8217;t to say that my readers shouldn&#8217;t feel that they can&#8217;t make themselves known :-)  I&#8217;d love to hear from you.</p></div><div>See more progress on: <a href="http://www.43things.com/people/progress/rickerbh?on=1997449">find out who's subscribing to me :)</a></div></div>

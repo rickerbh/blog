@@ -1,0 +1,22 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2005-12-19 19:21:00'
+layout: post
+slug: go-paypal
+status: publish
+title: Go PayPal!
+wordpress_id: '199'
+? ''
+: - business
+  - ruby
+  - software
+---
+
+Woohoo!  I got <a href="http://www.paypal.com/">PayPal</a> IPN integration working.  Now you can register with my application, make a payment via PayPal, and PayPal will come back to my web app and let me know that you've registered.  Clever stuff.
+
+I used the PayPal IPN GEM from <a href="http://dist.leetsoft.com/">http://dist.leetsoft.com</a>, and integrated it with my own Payment object.  I don't really have the need for a full "ordering"-type system with my application.  There is only ever 1 line item per order, so only a single payment object is required.  I could have implemented an order, with order_line_items, and shipping and billing addresses, and tax and handling calculations, but I don't need them.
+
+I need to look into the IPN integration a little more tho.  When I say I've got it working, I mean I've had 1 payment through that successfully updated a users registration details.  PayPal seem to be pushing the transaction to me twice - I handle that correctly (checking for unique transaction IDs), but I think I need to respond to them in some other way.  I better re-read those docs.
+
+I'm quite pleased.  Maybe a congratulatory coffee &amp; and an apple are in order.

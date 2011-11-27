@@ -1,0 +1,29 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2006-02-05 20:42:00'
+layout: post
+slug: a-bit-weak
+status: publish
+title: A bit weak
+wordpress_id: '122'
+? ''
+: - music
+---
+
+<div>
+<div><img src="http://www.allconsuming.net/images/icons/stars/2-star.gif" alt="" width="63" height="12" /><a href="http://www.allconsuming.net/item/view/59617">Songs from My Funeral</a></div>
+<div>by Snakefarm</div>
+ 
+<div>
+
+That's how I found it.  The album left me feeling quite empty.  Like I hadn't really been listening to anything.  The only track I actually enjoyed off the album was â€œBlack Girlâ€, and I think the reason for that was because I really like the Nirvana acoustic version â€œWhere did you sleep last nightâ€ from their Unplugged album.
+
+I was recommended this album by a friend, and she's not usually wrong about music that I'll like.
+
+I was quite disappointed.
+
+</div>
+<div><a href="http://www.allconsuming.net/person/rickerbh/59617">
+See more about Songs from My Funeral</a></div>
+</div>

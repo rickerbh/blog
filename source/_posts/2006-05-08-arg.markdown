@@ -1,0 +1,14 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2006-05-08 22:03:00'
+layout: post
+slug: arg
+status: publish
+title: Arg!
+wordpress_id: '91'
+? ''
+: - Uncategorized
+---
+
+<div><div><p>My USB controller on my &#8220;movies&#8221; drive crapped out, so I went and got another one.  Anyway, I&#8217;ve now got my media split between the 2 drives &#8211; all video on one, all music on the other.  It&#8217;s great.  I&#8217;ve just got some photos to organise, and my hard drive is officially cleaned up.</p></div><div>See more progress on: <a href="http://www.43things.com/people/progress/rickerbh?on=2348711">clean up my hard drive</a></div></div>

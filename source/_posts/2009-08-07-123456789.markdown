@@ -1,0 +1,18 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2009-08-07 11:40:26'
+layout: post
+slug: '123456789'
+status: publish
+title: '123456789'
+wordpress_id: '384'
+? ''
+: - Uncategorized
+---
+
+Today in the UK the time hit 12:34:56 7/8/9.  Not exciting for everyone I guess, but it won't happen again for another 100 years.
+
+<a href="http://hamishrickerby.com/wp-content/uploads/2009/08/123456789.PNG"><img src="http://hamishrickerby.com/wp-content/uploads/2009/08/123456789-300x252.PNG" alt="123456789" title="123456789" width="300" height="252" class="aligncenter size-medium wp-image-385" /></a>
+
+ 

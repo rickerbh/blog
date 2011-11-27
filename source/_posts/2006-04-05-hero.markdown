@@ -1,0 +1,29 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2006-04-05 10:30:00'
+layout: post
+slug: hero
+status: publish
+title: Hero
+wordpress_id: '102'
+? ''
+: - movies
+---
+
+<div>
+<div>
+
+<img src="http://images.amazon.com/images/P/B00030590I.01._SCMZZZZZZZ_.jpg" alt="" />
+
+I saw this â€“ I don't remember if I added it, or if Jenna added it.  Anyway, this was one of the most beautiful movies I've seen.  Absolutely stunning.  Visual masterpiece â€“ my eyes were hardly worthy.  The soundtrack is perfect as well.
+
+It appears that it was pretty windy in China 2000 years ago â€“ their hair is always blowing around whilst they are fighting ;-)
+
+I thought the story was actually a bit weak, and in some places I found it a bit difficult to follow.  The concept for the story was OK I guess, but the execution was a little poor IMHO.  However, the stunning camera and scene work more than made up for it.
+
+Based on the visuals and soundtrack alone I recommend it.
+
+</div>
+<div>See more progress on: <a href="http://www.43things.com/people/progress/rickerbh?on=1867393">watch all the movies on Jennas list</a></div>
+</div>

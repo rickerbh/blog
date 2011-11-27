@@ -1,0 +1,20 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2008-03-06 09:54:11'
+layout: post
+slug: flash
+status: publish
+title: Flash!
+wordpress_id: '194'
+? ''
+: - web
+---
+
+I'm doing a bit of Flash work for a <a href="http://broomemedia.com.au">mate</a> who is setting up a website to host video.  One of the problems I just solved was how to get some text to flow around an image.  I was hoping there would be some sort of way to make a textfield of arbitrary shape (with vectors or something) because I really wanted an L shaped textfield, so I could place an image in the upper left corner, but sadly, they are just rectangles.  I found <a href="http://www.actionscript.org/forums/showthread.php3?t=133932">this post</a> though, and the solution was so simple.
+
+Just convert the textfield to Render text as HTML!  Put your normal HTML tags in, and it's all good bro.
+
+That's what I like about this whole Flash thing - it's very easy to merge the richness of Flash with the simplicity of the web.
+
+What I don't like is that the content isn't searchable by Mr. Google :-(

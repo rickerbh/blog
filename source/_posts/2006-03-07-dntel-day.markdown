@@ -1,0 +1,26 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2006-03-07 20:19:00'
+layout: post
+slug: dntel-day
+status: publish
+title: dntel day
+wordpress_id: '110'
+? ''
+: - music
+---
+
+<div>
+<div><a href="http://www.allconsuming.net/item/view/369752"><img src="http://images.amazon.com/images/P/B00006ALDL.01._SCTHUMBZZZ_.jpg" alt="" /></a></div>
+<div><img src="http://www.allconsuming.net/images/icons/stars/5-star.gif" alt="" width="63" height="12" /><a href="http://www.allconsuming.net/item/view/369752">This Is the Dream of Evan and Chan</a></div>
+<div>by Dntel</div>
+ 
+<div>
+
+This is a fantastic album.  If you are a fan of postal service, then it's highly likely you will love this too.  I think I have a new addition to my favourite bands.
+
+</div>
+<div><a href="http://www.allconsuming.net/person/rickerbh/369752">
+See more about This Is the Dream of Evan and Chan</a></div>
+</div>

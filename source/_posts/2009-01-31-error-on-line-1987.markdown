@@ -1,0 +1,39 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2009-01-31 07:37:48'
+layout: post
+slug: error-on-line-1987
+status: publish
+title: error on line 1987
+wordpress_id: '279'
+? ''
+: - apple
+  - iphone
+  - mobile development
+---
+
+I am having a bit of a play with the <a href="http://code.google.com/p/cocos2d-iphone/">cocos2d</a> game engine for iPhone and encountered a very strange error in the console - I don't believe it's at all related to the game engine itself, so it's just coincidence that I was trying something new out.
+
+error while killing target (killing anyway): warning: error on line 1987 of "/SourceCache/gdb/gdb-962/src/gdb/macosx/macosx-nat-inferior.c" in function "macosx_kill_inferior_safe": (os/kern) failure (0x5x)
+
+I figured out that it had to do with definition of a selector...  Naughty code below.
+
+``` objective-c
+MenuItem *start = [MenuItemFont itemFromString:@"Start Game"
+                                        target:self
+                                      selector:@selector(startGame)];
+```
+
+
+The problem is that the method name inside @selector() MUST have a colon on the back of it.
+
+Good code
+
+``` objective-c
+MenuItem *start = [MenuItemFont itemFromString:@"Start Game"
+                                        target:self
+                                      selector:@selector(startGame:)];
+```
+
+Hope that's useful to someone.

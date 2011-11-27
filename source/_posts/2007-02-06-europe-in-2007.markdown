@@ -1,0 +1,23 @@
+---
+author: <a href="/about">Hamish Rickerby</a>
+comments: yes
+date: '2007-02-06 21:29:22'
+layout: post
+slug: europe-in-2007
+status: publish
+title: Europe in 2007
+wordpress_id: '172'
+? ''
+: - business
+  - politics
+---
+
+I've been reading The Economist's "The World in 2007" today.  It looks like their predictions for 2007 in economics, business, politics - sort of a <em>what's going to happen in '07</em>.
+
+One thing that I just get this feeling about when I read about the political situation in Europe in terms of predictions (and known events) for '07, is that Europe is due some sort of flood of innovation.  I've been seeing and hearing about the Europeans becoming more and more prevalent on the (please excuse the buzzword) <em>Web 2.0</em> scene, and I just get this sense that something is going to happen this year.  I'd like to think that Silicon Valley buzz will die down, in favour of a Silicon Continent buzz.
+
+I've got little to no evidence to back this hope up, it's just a feeling I have.  It's things like the success of ruby conferences in London and across Europe, some German entrepreneurs I know, the ubiquity and adoption of mobile services in Europe, the socialness of the Europeans, the proximity of so many different cultures and people and the overdueness of such an age.  There is no reason why it can't happen here, and I just feel the time is right.
+
+I guess it's just that 2007 seems to be a fairly significant year politically, and there is a lot of change in the air.  I think we'll see some movement from the Europeans in the innovation space.
+
+ 
