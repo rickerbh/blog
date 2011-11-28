@@ -17,8 +17,10 @@ Then, they pulled up 3 teams of developers and designers to talk about the appli
 2. a music video/game in which you take the form of a 3D shape and can shift gravity and change shapes to navigate through the levels - [Redshift](http://www.alphalabs.cc/project/70-redshift)
 3. a kaleidoscope app merging video and generative art that changes based on environmental factors such as motion and sound - [Kaleidobooth](http://www.alphalabs.cc/project/68-kaleidobooth)
 
-The applications themselves were quite impressive, but what impressed me more is that the team that did the second app ([Field](http://www.field.io/) and [Treehouse](http://teamtreehouse.com/)) had no experience with the WP7 or XNA development environments previously, and managed to create a 3D game in 2 weeks, with excellent graphics and sound. Very impressed.
+The applications themselves were quite impressive, but what impressed me more is that the team that did the second app ([Field](http://www.field.io/), [Treehouse](http://teamtreehouse.com/), and [Ed](http://xna-uk.net/blogs/braindump/default.aspx) from the XNA Users Group) had no experience with the WP7 ~~or XNA~~ development environments previously, and managed to create a 3D game in 2 weeks, with excellent graphics and sound. Very impressed.
 
 And to top it all off, I got a free phone :-) Nokia Lumia 800 - it's actually really nice. Screen is brilliant. 
 
 AND alphalabs are running a little competition too - app development - cash prizes. Doesn't appear to be on their website yet, but I recall it closes in early Jan-2012.
+- - - 
+(Update 20111128 - Ed from XNA User Group was also part of team two - thanks for the update Tristan!)
