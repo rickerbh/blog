@@ -6,7 +6,7 @@ comments: false
 sharing: true
 footer: false
 ---
-My name is Hamish Rickerby. I’m a New Zealander living in Reading in the United Kingdom. My wife [@mrsrickerby](http://twitter.com/mrsrickerby) and I are about to embark on a new adventure and relocate to Melbourne, Australia. It's all very exciting.
+My name is Hamish Rickerby. I’m a New Zealander living in Melbourne, Australia. My wife [@mrsrickerby](http://twitter.com/mrsrickerby) and I moved here after 5+ years in the UK.
 
 I'm interested in technology in general, but particularly in telecommunications, usage of IT systems in healthcare, small business systems, and all things Apple.
 
