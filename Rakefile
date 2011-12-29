@@ -7,6 +7,7 @@ require "stringex"
 ssh_user       = "rickerbh@hamishrickerby.com"
 ssh_port       = "22"
 document_root  = "~/domains/hamishrickerby.com/web/public"
+rsync_delete   = true
 deploy_default = "rsync"
 
 # This will be configured for you when you run config_deploy
