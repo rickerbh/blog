@@ -170,6 +170,8 @@ I also had an issue when the application was attempting to write the `.gcda` fil
 
 You may also need to enable the Accessibility inspector in the iPhone Simulators Settings app under General > Accessibility - instructions from [Apple](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iPhoneAccessibility/Testing_Accessibility/Testing_Accessibility.html).
 
+If you are getting a message that says `Couldn't register XXXX with the bootstrap server. Error: unknown error code. This generally means that another instance of this process was already running or is hung in the debugger.` this means that either the Simulator is already running (it must be quit for the headless build to run) or that there is a previous version of the headless test exection that has hung. You can find these with `ps -ef | grep Fran` (Fran for frankified). Kill them with the `kill` command.
+
 ### Configuring Frank for Headless Tests under Jenkins
 There will be a file in your Xcode project under the Frank directory at `support/env.rb` - this will contain some environmental settings that are used for executing the cucumber tests. Replace the content with the below with the appropriate text replacements. You will need different settings for manual command line based test execution, and the Jenkins based tests, so there is an environment based conditional in the file. Default is for command line based testing.
 
@@ -310,6 +312,7 @@ Create a new "Execute shell build step", and click and drag it (with the little 
 
 ```
 source <Your home dir>/.rvm/environments/<your ruby version>
+export TESTING_ENV="jenkins"
 cd "<Your Jenkins install location>/jobs/Project UI Tests/workspace/Frank"
 cucumber -f junit --out ../test-reports
 ```
