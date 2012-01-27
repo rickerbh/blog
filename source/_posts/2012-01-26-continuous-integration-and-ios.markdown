@@ -287,7 +287,7 @@ Navigate down the screen until you find the "Add build step" button. Click it an
 * Target - set this to the unit test target name from Xcode (no escaping of spaces required)
 * SDK - set this to the SDK you want to build for. Mine is `/Developer/Platform/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/`
 * Configuration - set this to `DEBUG`
-* Keychain path - this should already be set to ${HOME}/Library/Keychains/login.keychain
+* Keychain path - this should already be set to `${HOME}/Library/Keychains/login.keychain`
 
 That's all the Xcode build information set up. Now, to generate the coverage test files. Add an "Execute Shell" build step with the "Add build step" button. In the "Command" box, call gcovr (`which gcovr` to find your own install location) with `/usr/local/share/python/gcovr -r "<Your Jenkins install location>/jobs/Project Unit Tests/workspace" --exclude '.*UnitTests.*' --xml > "<Your Jenkins install location>/jobs/Project Unit Tests/workspace/coverage.xml"`
 	
@@ -347,7 +347,7 @@ Add an Execute shell build step. This will call curl to upload the application t
 
 ```
 cd ../..
-curl http://testflightapp.com/api/builds.json -F file=@@Project\ TestFlight/lastSuccessful/archive/build/Release-iphoneos/Project\ TestFlight-Release.ipa -F api_token=’<api token>’ -F team_token=’<team token>’ -F notes=’This is an auto deploy build of the develop branch with Release configuration’ -F notify=True -F distribution_lists=’<name of test distribution list>’
+curl http://testflightapp.com/api/builds.json -F file=@Project\ TestFlight/lastSuccessful/archive/build/Release-iphoneos/Project\ TestFlight-Release.ipa -F api_token=’<api token>’ -F team_token=’<team token>’ -F notes=’This is an auto deploy build of the develop branch with Release configuration’ -F notify=True -F distribution_lists=’<name of test distribution list>’
 ```
 
 The ipa that's being uploaded there is the version that was saved in the last build job. For the name, just look inside the Project TestFlight job and it'll have the name of the "Last Successful Artifact" - this is what you need to upload.
