@@ -3,7 +3,7 @@ layout: post
 title: "Continuous Integration and iOS"
 date: 2012-01-27 14:00
 comments: true
-categories: 
+categories:
 ---
 The client project I'm currently working on is quite large. There are over 90 different screens required in the application, and regression testing all of these, with the different data variants and scenarios is not something I'd like to attempt by hand, and is not something I would expect my client to pay for me (or anyone for that matter) to do. Both unit and application tests can be automated, and I figured that this was something that I should do for this project to ensure changes I introduce don't break existing functionality, and any bugs found won't be introduced.
 
@@ -39,14 +39,14 @@ You'll also need rake (for managing Frank's build process), so you can get that 
 ### Install homebrew
 I used [homebrew](http://mxcl.github.com/homebrew/) to install Jenkins. It's a good package manager for OSX, and well maintained. Instructions are at [https://github.com/mxcl/homebrew/wiki/installation](https://github.com/mxcl/homebrew/wiki/installation) but you can just paste the following into a shell and it'll install.
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"`
+`/usr/bin/ruby -e "$(/usr/bin/curl -fsSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"`
 
 ### Install Python and gcovr
 gcovr (and python) are needed to generate the coverage files from the unit and application test output. _If you already have a modern python installation (2.7) then skip the python installation step and just install gcovr with your own copy of easy_install_
 
 You can use homebrew to install python. Do so with:
 
-`brew install python` 
+`brew install python`
 
 Then you will need easy_install (or the distribute tools)
 
@@ -55,7 +55,7 @@ curl -O http://peak.telecommunity.com/dist/ez_setup.py
 /usr/local/bin/python ez_setup.py
 ```
 
-You will then need to get gcovr. 
+You will then need to get gcovr.
 
 `/usr/local/share/python/easy_install gcovr`
 
@@ -63,7 +63,7 @@ Install and configure Jenkins
 -----------------------------
 Thanks to homebrew, the installation step is very easy. Just paste the following into the shell and it'll install.
 
-`homebrew install jenkins`
+`brew install jenkins`
 
 There are a couple of configuration steps that are required as well. Thanks to [http://mattonrails.wordpress.com/2011/06/08/jenkins-homebrew-mac-daemo/](http://mattonrails.wordpress.com/2011/06/08/jenkins-homebrew-mac-daemo/) for the configuration required.
 
@@ -129,17 +129,17 @@ Once these are installed and Jenkins has restarted, you'll need to configure the
 
 Configure your Xcode project
 ----------------------------
-We're going to take a little departure from Jenkins for the moment to prep Xcode for integration. We are going to setup our project for unit tests and Frank. 
+We're going to take a little departure from Jenkins for the moment to prep Xcode for integration. We are going to setup our project for unit tests and Frank.
 
 ### Unit Tests
-If you don't have one already, you'll need to set up a new target for Unit Tests in your Xcode project. Select your top level project in the in Project Navigator, and then "Add Target". Under iOS -> Other choose the "Cocoa Touch Unit Testing Bundle". Give it a name and then write some tests. 
+If you don't have one already, you'll need to set up a new target for Unit Tests in your Xcode project. Select your top level project in the in Project Navigator, and then "Add Target". Under iOS -> Other choose the "Cocoa Touch Unit Testing Bundle". Give it a name and then write some tests.
 
 The other thing we'll need to do here is set up Code Coverage. In the Build Phases area of your new Target, under Link Binary With Libraries, hit the + and select Add Other. Then navigate to `/Developer/usr/lib` and select `libprofile_rt.dylib`. This is the library that enables the profiling goodness. After this, select the Build Settings area, and set "Generate Test Coverage Files" and "Instrument Program Flow" both to Yes in the column for your Unit Test target. Ensure that "Library Search Paths" includes `$(DEVELOPER_DIR)/usr/lib`, but this should be there already.
 
 You should be set up for code coverage now. If you want to check this is working, ensure your build target (up the top on the right on the Run & Stop buttons) is set to your Unit Test target and iPhone Simulator, then build and test your unit test target. Then, open Organizer, choose the Projects item from the toolbar, select your project, and then click the little arrow next to the Derived Data directory. This will open the build location in Finder. In here, open the selected directory, then navigate to `Build/Intermediates/<Your Project>.build/Debug-iphonesimulator/<Your Unit Test Target>.build/Objects-normal/i386/` and in there there should be a set of `.gcno` (generated at build) and `.gcda` (generated when your test target executed and finished) files. These are the code coverage files. If you'd like to have a look at them before we integrate back into Jenkins, get [CoverStory](http://code.google.com/p/coverstory/) and open them up.
-	
+
 ### Application (UI) Tests with Frank
-Now we'll set up the application test target with [Frank](https://github.com/moredip/Frank). First of all, we need to install Frank and cucumber. 
+Now we'll set up the application test target with [Frank](https://github.com/moredip/Frank). First of all, we need to install Frank and cucumber.
 
 We will need to use a customised version of Frank to enable the iOS Simulator to exit after execution of the tests. The standard build does not include a method to terminate an application so we'll need to build this in. Thanks to Martin Hauner at [http://softnoise.wordpress.com/2010/11/14/ios-running-cucumberfrank-with-code-coverage-in-hudson/](http://softnoise.wordpress.com/2010/11/14/ios-running-cucumberfrank-with-code-coverage-in-hudson/) for the tip on this. I've forked frank and included this exit method, and you can get it from [https://github.com/rickerbh/Frank/tree/exitCommand](https://github.com/rickerbh/Frank/tree/exitCommand) with the command `git clone git@github.com:rickerbh/Frank.git` and then switch to the exitCommand branch. You'll also need to `git submodule init` and `git submodule update`, and then check the submodules that are pulled in as I recall the submodules have submodules :-/
 
@@ -147,18 +147,18 @@ Once all that is done, you'll need to be in the root directory of Frank that you
 
 `rake build_lib`
 
-After this is finished, there should be a file at `dist/libFrank.a`. This is the customised library that we'll need to use with the exit command built in. 
+After this is finished, there should be a file at `dist/libFrank.a`. This is the customised library that we'll need to use with the exit command built in.
 
 (Full Frank installation instructions available at [http://www.testingwithfrank.com/installing.html](http://www.testingwithfrank.com/installing.html) - I'll paraphrase here with a couple of sightly different steps for the custom library and code coverage inclusion) For convenience of installation, I actually installed the proper Frank gem rather than my customised build. You can do this with `gem install frank-cucumber`. Then, `cd` to your project directory, and run `frank-skeleton`. This installs Frank in your project directory. It also copies a version of the official `libFrank.a` file into `Frank/`. You'll need to replace that with the version that we built.
 
-To add Frank to your Xcode project, you'll need a new target (you don't want the Frank server installed in the Release version of your application). Duplicate your main application target by right clicking on it and selecting Duplicate. Rename the new target "\<Your app name\> Frankified". Then, add the Frank directory (that was created when you ran `frank-skeleton`) to your Xcode project. Ensure that it's only added to your frankified target, not your main application target. Add `CFNetwork.framework` to the Frankified "Link Binary With Libraries" section of the Build Phases. Then, add `-all_load` and `-ObjC` to the "Other Linker Flags" Build Setting. 
-	
+To add Frank to your Xcode project, you'll need a new target (you don't want the Frank server installed in the Release version of your application). Duplicate your main application target by right clicking on it and selecting Duplicate. Rename the new target "\<Your app name\> Frankified". Then, add the Frank directory (that was created when you ran `frank-skeleton`) to your Xcode project. Ensure that it's only added to your frankified target, not your main application target. Add `CFNetwork.framework` to the Frankified "Link Binary With Libraries" section of the Build Phases. Then, add `-all_load` and `-ObjC` to the "Other Linker Flags" Build Setting.
+
 To enable code coverage for Frank,  add `--coverage` to the "Other Linker Flags" Build Setting, and set "Generate Test Coverage Files" and "Instrument Program Flow" both to Yes in the column for your Frankified target.
 
 If you build and run the Frankified target for the iPhone simulator of your application, it should build OK and start the simulator. Head to [ http://localhost:37265](http://localhost:37265) and you should see the Symbiote browser of your iPhone application.
 
 If you want to see if the coverage is working, head to `Build/Intermediates/<Your Project>.build/Debug-iphonesimulator/<Your Frankified Target>.build/Objects-normal/i386/` just like with the Unit Tests area above.
-	
+
 You should then write some tests in cucumber and make sure they work.
 
 #### Troubleshooting Frank and Code Coverage
@@ -222,18 +222,18 @@ Before do
   # check that pwd contains the "build" dir as we are creating
   # items relative to it.
   #Dir["build"].length.should == 1
-  
+
   # make sure we do start with a clean environment
   FileUtils.remove_dir("#{USER_DIR}",true)
-  
+
   pwd     = "#{Dir.pwd}"
   prefdir = "#{PREF_DIR}"
   FileUtils.mkdir_p prefdir
-  
+
   File.open("#{PREF_DIR}/#{ACCESIBILITY_PLIST}", 'w') do |f|
     f <<ACCESIBILITY_CONTENT
   end
-  
+
   ENV['SDKROOT']               = "#{SDK_DIR}"
   ENV['DYLD_ROOT_PATH']        = "#{SDK_DIR}"
   ENV['IPHONE_SIMULATOR_ROOT'] = "#{SDK_DIR}"
@@ -277,7 +277,7 @@ Setting up the jobs in Jenkins
 The way I have structured my tasks in jenkins is that I have 4 different jobs. I have a unit test execution job that triggers off a git push. If this is successful, I have the UI test job that executes. If this is successful, I then package and archive the binary that was generated from that push. The last job that is configured is a daily distribution of the last successfully tested application to a group on TestFlight.
 
 ### Setting up the unit test job in Jenkins
-Navigate to [Jenkins](http://localhost:8080) and click on "New Job". Give it a name (I called mine "Project Unit Tests"), and select the "Build a free-style software project" radio button, then click OK. 
+Navigate to [Jenkins](http://localhost:8080) and click on "New Job". Give it a name (I called mine "Project Unit Tests"), and select the "Build a free-style software project" radio button, then click OK.
 
 You should now be in a screen to configure the build settings for your unit test target. In the source code management area, choose git. Enter your repo name (something like `git@localhost:my-project.git`). If you have a specific branch you want to build from put it in the "Branches to build" box (mine is `*/develop`). In the "Build Triggers" area below, select "Poll SCM". I've set my schedule to `* * * * *` meaning it'll look every minute for a new push.
 
@@ -290,7 +290,7 @@ Navigate down the screen until you find the "Add build step" button. Click it an
 * Keychain path - this should already be set to `${HOME}/Library/Keychains/login.keychain`
 
 That's all the Xcode build information set up. Now, to generate the coverage test files. Add an "Execute Shell" build step with the "Add build step" button. In the "Command" box, call gcovr (`which gcovr` to find your own install location) with `/usr/local/share/python/gcovr -r "<Your Jenkins install location>/jobs/Project Unit Tests/workspace" --exclude '.*UnitTests.*' --xml > "<Your Jenkins install location>/jobs/Project Unit Tests/workspace/coverage.xml"`
-	
+
 In the Post-build Actions section, check the "Archive the artifacts" box and set the "Files to archive" field to `build/Debug-iphoneos/*.ipa`
 
 Check the "Publish Cobertura Coverage Report" box and set the "Cobertura xml report pattern" to `**/coverage.xml`.
@@ -307,8 +307,8 @@ Navigate to [Jenkins](http://localhost:8080) and click on "New Job". Give it a n
 * Target - Set this to your Frankified target name from Xcode
 
 Change the existing "Execute shell" step to use your UI Test build job name rather than the unit test job name. `/usr/local/share/python/gcovr -r "<Your Jenkins install location>/jobs/Project UI Tests/workspace" --exclude '.*UnitTests.*' --xml > "<Your Jenkins install location>/jobs/Project UI Tests/workspace/coverage.xml"`
-	
-Create a new "Execute shell build step", and click and drag it (with the little 4x4 set of boxes on the right of the "Execute shell" label on screen) to move it inbetween the Xcode step and the gcovr step. Insert the following commands in the shell box. 
+
+Create a new "Execute shell build step", and click and drag it (with the little 4x4 set of boxes on the right of the "Execute shell" label on screen) to move it inbetween the Xcode step and the gcovr step. Insert the following commands in the shell box.
 
 ```
 source <Your home dir>/.rvm/environments/<your ruby version>
