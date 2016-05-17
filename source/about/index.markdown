@@ -6,10 +6,10 @@ comments: false
 sharing: true
 footer: false
 ---
-My name is Hamish Rickerby. I’m a New Zealander living in Melbourne, Australia. My wife [@mrsrickerby](http://twitter.com/mrsrickerby) and I recently moved here after 5+ years in the UK.
+My name is Hamish Rickerby. I’m a New Zealander living in Sydney, Australia. My wife [@amcamr](http://twitter.com/amcamr) and I recently moved here after a couple of years in Melbourne, preceeded by ~6 years in the UK. We have a little kid too. He's awesome.
 
 I'm interested in technology in general, but particularly in telecommunications, usage of IT systems in healthcare, small business systems, and all things Apple.
 
-I run a company called [happtic](http://happtic.com) that creates iOS (iPhone, iPad) and Mac Applications. We release iPhone, iPad and Mac applications under the [Glimmer Design](http://glimmerdesign.com) as well as the [happtic](http://happtic.com/) brands. We work with clients of all sizes, from FTSE-100 companies down to private individuals. [Get in touch](mailto:contact@happtic.com) if you'd like to discuss a project.
+I work for a company called [Simple Machines](http://simplemachines.com.au). We do complex systems engineering, mobile applications, product design, UX, and graphic design. Think banking, gaming, ticketing. High performance, high scalability, big data analytics.
 
 I'm [@rickerbh](http://twitter.com/rickerbh) on Twitter - you should follow me.
