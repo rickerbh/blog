@@ -10,6 +10,7 @@ My boss bought me a copy of Apprenticeship Patterns to read. It's a good read fo
 
 ## Books I'm reading or want to read
 - [Sprint : How to Solve Big Problems and Test New Ideas in Just Five Days](http://www.bookdepository.com/Sprint/9780593076118?a_aid=rickerbh)
+- [The Pragmatic Programmer: From Journeyman to Master](http://www.bookdepository.com/Pragmatic-Programmer-Andrew-Hunt/9780201616224?a_aid=rickerbh)
 
 ## Books I've read
 - 20160517 - [Apprenticeship Patterns : Guidance for the Aspiring Software Craftsman](http://www.bookdepository.com/Apprenticeship-Patterns/9780596518387?a_aid=rickerbh)
