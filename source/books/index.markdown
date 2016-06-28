@@ -14,6 +14,7 @@ My boss bought me a copy of Apprenticeship Patterns to read. It's a good read fo
 - [An Introduction to Kolmogorov Complexity and its Applications](http://www.bookdepository.com/An-Introduction-Kolmogorov-Complexity-and-Its-Applications-Li-Ming-Paul-Vitanyi/9780387339986?ref=grid-view?a_aid=rickerbh)
 - [Refactoring](http://www.bookdepository.com/Refactoring/9780201485677?a_aid=rickerbh)
 - [In Love With These Times - My Life With Flying Nun Records](http://flyingout.co.nz/collections/featured-and-new/products/roger-shepherd-in-love-with-these-times)
+- [An Introduction to Functional Programming through Lambda Calculus](http://www.bookdepository.com/An-Introduction-Functional-Programming-Through-Lambd-Calculus-Greg-Michaelson/9780486478838?a_aid=rickerbh)
 
 ## Books I've read
 - 20160614 - [The Pragmatic Programmer: From Journeyman to Master](http://www.bookdepository.com/Pragmatic-Programmer-Andrew-Hunt/9780201616224?a_aid=rickerbh)
