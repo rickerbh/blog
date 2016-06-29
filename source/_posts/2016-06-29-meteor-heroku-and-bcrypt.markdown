@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meteor, Hroku, and bcrypt"
+title: "Meteor, Heroku, and bcrypt"
 date: 2016-06-29 11:07:11 +1000
 comments: true
 categories: 
