@@ -2,7 +2,8 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://rickerbh.github.io
+url: https://hamishrickerby.com
+enforce_ssl: hamishrickerby.com
 title: Hamish Rickerby
 subtitle: "Technology Consultant & iOS Developer based in Sydney, Australia"
 author: Hamish Rickerby
