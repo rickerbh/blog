@@ -15,11 +15,15 @@ My boss bought me a copy of Apprenticeship Patterns to read. It's a good read fo
 - [Refactoring](http://www.bookdepository.com/Refactoring/9780201485677?a_aid=rickerbh)
 - [In Love With These Times - My Life With Flying Nun Records](http://flyingout.co.nz/collections/featured-and-new/products/roger-shepherd-in-love-with-these-times)
 - [An Introduction to Functional Programming through Lambda Calculus](http://www.bookdepository.com/An-Introduction-Functional-Programming-Through-Lambd-Calculus-Greg-Michaelson/9780486478838?a_aid=rickerbh)
-- [Lord of the Flies](http://www.bookdepository.com/Lord-Flies-William-Golding/9780571056866?a_aid=rickerbh)
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
+- [Clean Code](https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884?a_aid=rickerbh) 
+- [Building Microservices](https://www.bookdepository.com/Building-Microservices/9781491950357?a_aid=rickerbh)
+- [Working Effectively with Legacy Code](https://www.bookdepository.com/Working-Effectively-with-Legacy-Code/9780131177055?a_aid=rickerbh)
+- [Extreme Programming Explained](https://www.bookdepository.com/Extreme-Programming-Explained/9780321278654?a_aid=rickerbh)
 
 ## Books I've read
-* 20160711 - [The Metamorphosis and Other Stories](http://www.bookdepository.com/Metamorphosis-Franz-Kafka/9780486290300?a_aid=rickerbh)
+- 20160714 - [Lord of the Flies](http://www.bookdepository.com/Lord-Flies-William-Golding/9780571056866?a_aid=rickerbh)
+- 20160711 - [The Metamorphosis and Other Stories](http://www.bookdepository.com/Metamorphosis-Franz-Kafka/9780486290300?a_aid=rickerbh)
 - 20160614 - [The Pragmatic Programmer: From Journeyman to Master](http://www.bookdepository.com/Pragmatic-Programmer-Andrew-Hunt/9780201616224?a_aid=rickerbh)
 - 20160520 - [Sprint : How to Solve Big Problems and Test New Ideas in Just Five Days](http://www.bookdepository.com/Sprint/9780593076118?a_aid=rickerbh)
 - 20160517 - [Apprenticeship Patterns : Guidance for the Aspiring Software Craftsman](http://www.bookdepository.com/Apprenticeship-Patterns/9780596518387?a_aid=rickerbh)
