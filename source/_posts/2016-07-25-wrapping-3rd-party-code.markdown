@@ -79,7 +79,7 @@ If we need to swap out Pivotal for Trello, we can simply replace the contents of
 
 ## Multiple Third Parties
 
-Lets say in the future we have a requirement to support more than one external system. The existing isolation model between the callback and the sync-module still applies. We'd just need to inject another adapter in the middle of this flow.
+Let's say in the future we have a requirement to support more than one external system. The existing isolation model between the callback and the sync-module still applies. We'd just need to inject another adapter in the middle of this flow.
 
 1. Rename `sync-adapter` to represent the specific external system it relates to: `pivotal-adapter`.
 2. Implement the appropriate adapter for the new external system: `trello-adapter`
