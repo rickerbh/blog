@@ -93,7 +93,7 @@ const syncEpic = (epic) => {
   const syncData = epic.syncMetadata
   if syncData.service == 'pivotal' {
     syncPivotalEpic(epic)
-  } else if storySyncData.service == 'trello' {
+  } else if syncData.service == 'trello' {
     syncTrelloEpic(epic)
   }
 }
