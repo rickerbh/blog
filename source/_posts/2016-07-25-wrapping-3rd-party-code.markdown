@@ -5,16 +5,18 @@ date: 2016-07-25 13:05:35 +1000
 comments: true
 categories: 
 ---
-I've been integrating a system I've been developing with a 3rd party service for data synchronisation. We're looking to synchronise tasks out with systems like Pivotal Tracker, Jira, Trello etc, but were unsure which of those systems we would actually use. I'm currently [reading](https://hamishrickerby.com/books/) [Clean Code](https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884?a_aid=rickerbh), and there's a really interesting and relevant chapter on "Boundaries", and it covers a similar scenario to what we were facing: _Using Third-Party Code_.
+I've been integrating a system I've been developing with a 3rd party service for data synchronisation. We're looking to synchronise tasks out with systems like Pivotal Tracker, Jira, Trello etc, but were unsure which of those systems we would actually use. I'm currently [reading](https://hamishrickerby.com/books/) [Clean Code](https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884?a_aid=rickerbh), and there's a really interesting and relevant chapter on "Boundaries". It covers a similar scenario to what we were facing: _Using Third-Party Code_.
 
 ## Isolation
 
-Generally, you should wrap any 3rd party code that you're dependent on with your own interfaces for that code. That way you get to define _how_ your main application logic interfaces with the 3rd party code, rather than having to have to bend your application to conform to a 3rd party library, API, or applications structure. Isolating the complexities of dealing with 3rd parties within an application to a particular class or module, behind an interface that you control also allows you to:
+Generally, you should wrap any 3rd party code that you're dependent on with your own interfaces for that code. That way you get to define _how_ your main application logic interfaces with the 3rd party code, rather than having to have to bend your application to conform to a 3rd party library, API, or applications structure. Isolating the complexities of dealing with 3rd parties within an application to a particular class or module behind an interface that you control also allows you to:
 
 1. deal with changes to that 3rd party (e.g., API upgrade)
 2. swap out that 3rd party with another one
 
-If we were building direct integration (with a project management tool like Jira, Pivotal Tracker, Trello) into our application, the models and interfaces of the 3rd party system would leak into our core system. E.g., Pivotal Tracker models epics with attached labels, and to attach a story to an epic we actually attach it to the label of the epic. Pivotal Tracker also handles story creation with labels/epics differently from story updates with labels/epics.
+If we were building direct integration (with a project management tool like Jira, Pivotal Tracker, Trello) into our application, the models and interfaces of the 3rd party system would leak into our core system.
+
+_Pivotal Tracker models epics with attached labels, and to attach a story to an epic we actually attach it to the label of the epic. Pivotal Tracker also handles story creation with labels/epics differently from story updates with labels/epics._
 
 ```javascript
 const saveStoryCallback = (response, error) => {
@@ -103,7 +105,7 @@ Addition of more 3rd parties can take place in the future without further change
 
 If a 3rd party changes their interface, or even their domain model, all changes will be isolated to the integration module alone. Your core application flow should be unaffected by the change, as the interface it interacts with should remain stable.
 
-For example, when Pivotal changed their API from v3 to v5, they introduced the concept of the Epic. Previously our application would have had epics internally, but the adapter would have converted epics to labels to support Pivotals model. With changes for their v5 API, Epics become a first class citizen as far as they are concerned and we'd update the adaptter, but our application core application would not need to change.
+_When Pivotal changed their API from v3 to v5, they introduced the concept of the Epic. Previously our application would have had epics internally, but the adapter would have converted epics to labels to support Pivotals model. With changes for their v5 API, Epics become a first class citizen as far as they are concerned and we'd update the adapter, but our application core application would not need to change._
 
 ## Wrap Up
 
