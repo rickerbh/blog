@@ -16,23 +16,42 @@ Generally, you should wrap any third party code that you're dependent on with yo
 
 If we were building direct integration (with a project management tool like Jira, Pivotal Tracker, Trello) into our application, the models and interfaces of the third party system would leak into our core system.
 
-_Pivotal Tracker models epics with attached labels, and to attach a story to an epic we actually attach it to the label of the epic. Pivotal Tracker also handles story creation with labels/epics differently from story updates with labels/epics._
+_Our application has support for Projects, Stories and Epics. Pivotal Tracker models these entities as well, but the relationship between Stories and Epics is based on a labelId assigned to the Epic at Pivotal. To attach a story to an epic we actually attach it to the label of the epic. Pivotal Tracker also handles story creation with labels/epics differently from story updates with labels/epics. Epics were introduced with v5 of the Tracker API. Previously, they didn't exist as a concept._
 
 ```javascript
 const saveStoryCallback = (response, error) => {
-  ... // Error handling
-  const story = response.data
-  // Perform other post-save actions (eg, update aggregated or count fields) 
-  // Sync with Pivotal
-  if story.epic {
-    // check epic exists at pivotal
-    // if so, extract the label ID
-    // if not, create it and gather the label ID
+  if error {
+    handleError(error)
+    return
   }
-  // check story exists at pivotal
-  // if so, update fields with attached label ID if the story has an epic
-  // if not, create story, then attach label as a separate call
-  // save sync metadata
+  
+  const story = response.data
+  // Perform other post-save actions (eg, update aggregated or count fields)
+  ...
+  
+  // Sync with Pivotal
+  let labelId = null
+  if story.epic {
+    const epicModel = story.epic.syncData
+    if epicModel {
+      labelId = pivotal.getEpic(epicModel.id).labelId
+    } else {
+      data = pivotal.createEpic(story.epic.pivotalModel)
+      story.epic.syncData = data
+      labelId = data.labelId
+    }
+  }
+  
+  const storyModel = story.syncData
+  if storyModel && pivotal.getStory(storyModel.id) {
+    pivotal.updateStory(story.pivotalModel)
+  } else {
+    story.syncData = pivotal.createStory(story.pivotalModel)
+  }
+
+  if (labelId) {
+    pivotal.attachLabel(story, labelId)
+  }
 }
 ```
 
@@ -41,6 +60,7 @@ Our save story callback will need to deal with the intricacies of the external s
 To avoid changes to our core application logic, we need to isolate the synchronisation logic behind an interface that represents entities in the language of our application, not the third party application.
 
 ```javascript
+const getStory = (story) => { ... }
 const syncStory = (story) => { ... }
 const deleteStory = (story) => { ... }
 const syncProject = (project) => { ... }
@@ -55,9 +75,15 @@ Then, we need to implement an [adapter](https://en.wikipedia.org/wiki/Adapter_pa
 import { syncEpic, syncStory } from "sync-adapter"
 
 const saveStoryCallback = (response, error) => {
-  ... // Error handling
+  if error {
+    handleError(error)
+    return
+  }
+  
   const story = response.data
   // Perform other post-save actions (eg, update aggregated or count fields)
+  ...
+  
   syncEpic(story.epic)
   syncStory(story)
 }
@@ -67,11 +93,15 @@ Then in our sync-module:
 
 ```javascript
 const syncEpic = (epic) => {
-  // if no epic passed in, return
-  // check epic exists at pivotal
-  // if so, update the fields that have changed and save
-  // if not, create the epic
-  // save sync metadata
+  if epic {
+    const epicModel = epic.syncData
+    if epicModel {
+      labelId = pivotal.getEpic(epicModel.id).labelId
+    } else {
+      data = pivotal.createEpic(epic.pivotalModel)
+      epic.syncData = data
+    }
+  }
 }
 ```
 
@@ -90,7 +120,7 @@ import { syncEpic as syncPivotalEpic } from 'pivotal-adapter'
 import { syncEpic as syncTrelloEpic } from 'trello-adapter'
 
 const syncEpic = (epic) => {
-  const syncData = epic.syncMetadata
+  const syncData = epic.syncData
   if syncData.service == 'pivotal' {
     syncPivotalEpic(epic)
   } else if syncData.service == 'trello' {
