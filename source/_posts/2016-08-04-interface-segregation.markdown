@@ -165,8 +165,8 @@ To illustrate another benefit of small interfaces, we consider the relationship 
 
 ```swift
 protocol Node {
-  var parent: Node
-  var children: [Node]
+  var parent: Node { get }
+  var children: [Node] { get }
 }
 ```
 
