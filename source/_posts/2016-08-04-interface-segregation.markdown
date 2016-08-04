@@ -69,7 +69,8 @@ class Chicken: Animal {
   }
   
   func birth() -> Animal {
-    // Chickens have eggs, not chickens. And they don't "birth" them. They lay them.
+    // Chickens have eggs, not chickens. 
+    // And they don't "birth" them. They lay them.
   }
 }
 
