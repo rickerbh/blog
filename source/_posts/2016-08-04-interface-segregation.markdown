@@ -172,6 +172,6 @@ protocol Node {
 
 With this view of a `Node`, we can model families of Viviparous animals. A Dog can return it's children, and they can reference their parents. This `Node` however, can also be reused for any directed graph, such as dependencies between different software libraries. If a client implements a function to produce a family tree of Dogs via the `Node` interface, the exact same code can be reused to produce a tree of library dependencies, as it's based on the generic `Node`, not `Animal`.
 
-_hat tip to @[triggerNZ](https://twitter.com/triggernz) for this example_
+_hat tip to [@triggerNZ](https://twitter.com/triggernz) for this example_
 
 Interface Segregation is one of the S.O.L.I.D. principles (I). Through ensuring that your interfaces small, targetted, and cohesive, you simplify implementation for clients. Clients won't be required to implement interfaces that don't make sense in the context of their object. Your interfaces also have greater opportunities for reuse, due to being more composable. Clients will be forced to change less, as only changes that impact their operation will need to be managed, rather than interface changes that they don't care about. 
