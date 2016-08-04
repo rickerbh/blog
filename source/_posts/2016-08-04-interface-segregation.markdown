@@ -134,6 +134,7 @@ class ChickenEgg: Egg {
   func hatch() -> Animal {
     return Chicken()
   }
+}
 
 class Chicken: Animal {
   var species = "Gallus gallus domesticus"
