@@ -9,7 +9,7 @@ The Interface Segregation principle (part of [S.O.L.I.D.](https://en.wikipedia.o
 
 Forcing clients to implement interfaces they're not concerned with causes unnecessary tight coupling of the client to the interface. If the interface changes, the client needs to reimplement/update itself even if it doesn't use that specific interface function. The result is wasted development effort in maintaining unnecessary code for testing and implementation. This should be avoided.
 
-Issues with interface definition can arise in langages that support [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming\)), [subtype](https://en.wikipedia.org/wiki/Subtyping) conformance, or concepts like [Interface](https://en.wikipedia.org/wiki/Interface_%28Java%29) or [Protocol](https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming\)). Specifically, issues are more likely to occur when an object or type can only inherit/implement one super-class or protocol/interface, such as with inheritance with (most) object-oriented languages. C++ is a notable exception here with support for multiple-inheritance, and implementation of protocols/interfaces via abstract base classes with pure virtual functions. The majority of languages I've seen that support the concept of interfaces, also support multiple interface inheritance. This is supported in Swift, Java, and Objective-C. Ruby can support this via the include statement, although the duck typing removals the formal need for this definition - same with Python. Haskell supports this via TypeClass conformance.
+Issues with interface definition can arise in languages that support [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming\)), [subtype](https://en.wikipedia.org/wiki/Subtyping) conformance, or concepts like [Interface](https://en.wikipedia.org/wiki/Interface_%28Java%29) or [Protocol](https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming\)). Specifically, issues are more likely to occur when an object or type can only inherit/implement one super-class or protocol/interface, such as with inheritance with (most) object-oriented languages. C++ is a notable exception here with support for multiple-inheritance, and implementation of protocols/interfaces via abstract base classes with pure virtual functions. The majority of languages I've seen that support the concept of interfaces, also support multiple interface inheritance. This is supported in Swift, Java, and Objective-C. Ruby can support this via the include statement, although the duck typing removals the formal need for this definition - same with Python. Haskell supports this via type class conformance.
 
 ## Show me some code
 
@@ -158,5 +158,20 @@ func birthSays(parent: Viviparous) -> String {
 ```
 
 You can see above that the Chicken is no longer required to implement birth. Through conformance to multiple, specific/detailed protocols it only needs to support functions and properties that make sense to that specific Class. This splitting of protocols alse ensures that we can typecheck inputs to functions, reducing the need for boilerplate code performing nil checks on optionals.
+
+### Surprising Usage
+
+To illustrate another benefit of small interfaces, we consider the relationship between parents and children. If the relationship between two entities is abstracted out and made generic, we can think of it as a Node in a Graph, with a parent (node), and multiple children (other nodes).
+
+```swift
+protocol Node {
+  var parent: Node
+  var children: [Node]
+}
+```
+
+With this view of a `Node`, we can model families of Viviparous animals. A Dog can return it's children, and they can reference their parents. This `Node` however, can also be reused for any directed graph, such as dependencies between different software libraries. If a client implements a function to produce a family tree of Dogs via the `Node` interface, the exact same code can be reused to produce a tree of library dependencies, as it's based on the generic `Node`, not `Animal`.
+
+_hat tip to @[triggerNZ](https://twitter.com/triggernz) for this example_
 
 Interface Segregation is one of the S.O.L.I.D. principles (I). Through ensuring that your interfaces small, targetted, and cohesive, you simplify implementation for clients. Clients won't be required to implement interfaces that don't make sense in the context of their object. Your interfaces also have greater opportunities for reuse, due to being more composable. Clients will be forced to change less, as only changes that impact their operation will need to be managed, rather than interface changes that they don't care about. 
