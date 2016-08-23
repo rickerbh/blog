@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Software Apprenticeships"
+date: 2016-08-20 09:49:06 +1000
+comments: true
+categories: 
+---
+[We](http://simplemachines.com.au) have trouble hiring developers. The number of people in Australia with Scala/FP experience is small, and the number of high-quality developers with this experience is even smaller. It also costs us a huge amount of money to hire new staff. Recruiters fees are massive and international candidates attract giant work visa application fees. We typically also only hire Senior Developers with 10+ years commerical experience - people who can lead projects, architect high performing systems, understand not only software developement but all the auxiliary systems as well. Our staff need to be able to be as comfortable with code as they are engaging with clients and stakeholders, presenting at user groups, mentoring, training etc. We need fully rounded software **professionals**.
+
+We can't find them. Or at least, it's becoming harder to find them. We've tried to sort this out on the the demand side - we have open positions with very competitive salaries, in one of the most [stunning cities in the world](https://www.flickr.com/search/?text=sydney%20australia). Our teams work on interesting greenfields projects, with a heavy functional focus. With all this, we're still struggling to find people.
+
+So, how can we solve this problem? We're going to try to create these sorts of professionals, or at least help create them - experimenting on the supply side of this equation. [Apprenticeship programmes](https://blog.codinghorror.com/software-apprenticeship/) can be a way of quickly upskilling motivated, capable, junior and mid-level devs who show great promise. We're currently putting two of our staff (I'm one of them) through a programme so we can get hands on experience of what it's like, and see how applicable something like this might be to our business. [8th Light](https://8thlight.com/apprenticeship/) are administering the programme for us.
+
+The apprenticeship programme will cover fundamentals of software development - both OO and FP styles. There will be a focus on developing software in a maintainable, understandable, clean style. It'll cover building scalable, robust systems. But, we don't want people to come out of this only knowing how to code. We need the to have all the other skill a true software _professional_ has. Skills such as team leadership, ability to design and architect simple and complex systems, understanding of infrastructure setup, costs, estimating projects, client communications, and project management. They'll need to be able to perform the non-technical day-to-day activities as well - running standups, planning sessions, project retrospectives, user story analysis. Our apprentices will need to be able to engage with communities, so things like maintaining blogs, speaking at user groups and conferences, are super important. And they'll need to want to continue this education, so reading books, mentoring, and training will be included too. We're looking to enable people to become true Software Professionals - not just "coders".
+
+We feel software apprenticeships have promise as a bridge between theoretical university CS (or self-taught) developers, and professionalism in software. We also feel that having a shared training experience across all consultants within the company will help increase internal trust in terms of quality and capability, as well as improve our already stellar marketplace reputation for high quality systems development and consulting.
+
+I plan on writing occasionally on how it's all going. Watch this space.
+
+_(BTW - if either the apprenticeships, or our work in general sounds like something you'd be interested in, get in touch with me on twitter! - [@rickerbh](https://twitter.com/rickerbh))_
