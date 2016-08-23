@@ -22,6 +22,7 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [Working Effectively with Legacy Code](https://www.bookdepository.com/Working-Effectively-with-Legacy-Code/9780131177055?a_aid=rickerbh)
 
 ## Books I've read
+- 20160818 - [97 Thing Every Programmer Should Know](http://www.bookdepository.com/97-Things-Every-Programmer-Should-Know-Kevlin-Henney/9780596809485?a_aid=rickerbh)
 - 20160801 - [Extreme Programming Explained](https://www.bookdepository.com/Extreme-Programming-Explained/9780321278654?a_aid=rickerbh)
 - 20160726 - [Clean Code](https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884?a_aid=rickerbh) 
 - 20160714 - [Lord of the Flies](http://www.bookdepository.com/Lord-Flies-William-Golding/9780571056866?a_aid=rickerbh)
