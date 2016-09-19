@@ -20,6 +20,8 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
 
 ## Books I've read
+- 20160919 - [Hackers & Painters](https://www.bookdepository.com/Hackers-Painters-Paul-Graham/9781449389550?a_aid=rickerbh)
+- 20160912 - [War of the Worlds](http://www.bookdepository.com/The-War-of-the-Worlds-H-G-Wells-Brian-Aldiss-Patrick-Parrinder-Andy-Sawyer/9780141441030?ref=grid-view?a_aid=rickerbh)
 - 20160908 - [Building Microservices](https://www.bookdepository.com/Building-Microservices/9781491950357?a_aid=rickerbh)
 - 20160906 - [Working Effectively with Legacy Code](https://www.bookdepository.com/Working-Effectively-with-Legacy-Code/9780131177055?a_aid=rickerbh)
 - 20160818 - [97 Thing Every Programmer Should Know](http://www.bookdepository.com/97-Things-Every-Programmer-Should-Know-Kevlin-Henney/9780596809485?a_aid=rickerbh)
