@@ -14,12 +14,15 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [Clojure for the Brave and True](http://www.bookdepository.com/Clojure-for-the-Brave-and-True-Daniel-Higginbotham/9781593275914?a_aid=rickerbh)
 - [Mathematical Logic](http://www.bookdepository.com/Mathematical-Logic/9780486425337?a_aid=rickerbh)
 - [An Introduction to Kolmogorov Complexity and its Applications](http://www.bookdepository.com/An-Introduction-Kolmogorov-Complexity-and-Its-Applications-Li-Ming-Paul-Vitanyi/9780387339986?ref=grid-view?a_aid=rickerbh)
-- [Refactoring](http://www.bookdepository.com/Refactoring/9780201485677?a_aid=rickerbh)
 - [In Love With These Times - My Life With Flying Nun Records](http://flyingout.co.nz/collections/featured-and-new/products/roger-shepherd-in-love-with-these-times)
 - [An Introduction to Functional Programming through Lambda Calculus](http://www.bookdepository.com/An-Introduction-Functional-Programming-Through-Lambd-Calculus-Greg-Michaelson/9780486478838?a_aid=rickerbh)
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
 
 ## Books I've read
+- 20161024 - [Animal Farm](http://www.bookdepository.com/Animal-Farm/9780141036137?a_aid=rickerbh)
+- 20161020 - [Farenheit 451](http://www.bookdepository.com/Farenheit-451-Ray-Bradbury/9782701156316?a_aid=rickerbh)
+- 20161017 - [The Art of War](http://www.bookdepository.com/The-Art-of-War-Sun-Tzu-Sun-Zi-Professor-Lionel-Giles/9781599869773?a_aid=rickerbh)
+- 20161012 - [Refactoring](http://www.bookdepository.com/Refactoring/9780201485677?a_aid=rickerbh)
 - 20160919 - [Hackers & Painters](https://www.bookdepository.com/Hackers-Painters-Paul-Graham/9781449389550?a_aid=rickerbh)
 - 20160912 - [War of the Worlds](http://www.bookdepository.com/The-War-of-the-Worlds-H-G-Wells-Brian-Aldiss-Patrick-Parrinder-Andy-Sawyer/9780141441030?ref=grid-view?a_aid=rickerbh)
 - 20160908 - [Building Microservices](https://www.bookdepository.com/Building-Microservices/9781491950357?a_aid=rickerbh)
