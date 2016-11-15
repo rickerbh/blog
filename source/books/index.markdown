@@ -17,9 +17,9 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [In Love With These Times - My Life With Flying Nun Records](http://flyingout.co.nz/collections/featured-and-new/products/roger-shepherd-in-love-with-these-times)
 - [An Introduction to Functional Programming through Lambda Calculus](http://www.bookdepository.com/An-Introduction-Functional-Programming-Through-Lambd-Calculus-Greg-Michaelson/9780486478838?a_aid=rickerbh)
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
-- [Diaspora](http://www.bookdepository.com/Diaspor-Greg-Egan/9780575082090?a_aid=rickerbh)
 
 ## Books I've read
+- 20161116 - [Diaspora](http://www.bookdepository.com/Diaspor-Greg-Egan/9780575082090?a_aid=rickerbh)
 - 20161027 - [The Happiness Advantage](http://www.bookdepository.com/The-Happiness-Advantage-Shawn-Achor/9780753539477?a_aid=rickerbh)
 - 20161024 - [Animal Farm](http://www.bookdepository.com/Animal-Farm/9780141036137?a_aid=rickerbh)
 - 20161020 - [Farenheit 451](http://www.bookdepository.com/Farenheit-451-Ray-Bradbury/9782701156316?a_aid=rickerbh)
