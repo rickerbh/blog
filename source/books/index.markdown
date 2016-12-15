@@ -19,6 +19,7 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
 
 ## Books I've read
+- 20161216 - [The Mythical Man Month](http://www.bookdepository.com/The-Mythical-Man-month/9780201835953?a_aid=rickerbh)
 - 20161212 - [Purely Functional Data Structures](http://www.bookdepository.com/Purely-Functional-Data-Structures/9780521663502?a_aid=rickerbh)
 - 20161116 - [Diaspora](http://www.bookdepository.com/Diaspor-Greg-Egan/9780575082090?a_aid=rickerbh)
 - 20161027 - [The Happiness Advantage](http://www.bookdepository.com/The-Happiness-Advantage-Shawn-Achor/9780753539477?a_aid=rickerbh)
