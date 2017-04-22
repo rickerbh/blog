@@ -11,7 +11,7 @@ My boss bought me a copy of Apprenticeship Patterns to read. It's a good read fo
 _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-rickerby)_
 
 ## Books I'm reading or want to read
-- [Clojure for the Brave and True](http://www.bookdepository.com/Clojure-for-the-Brave-and-True-Daniel-Higginbotham/9781593275914?a_aid=rickerbh)
+- [The Clojure Cookbook](https://www.bookdepository.com/Clojure-Cookbook-Luke-VanderHart-Ryan-Neufeld/9781449366179?a_aid=rickerbh)
 - [Mathematical Logic](http://www.bookdepository.com/Mathematical-Logic/9780486425337?a_aid=rickerbh)
 - [An Introduction to Kolmogorov Complexity and its Applications](http://www.bookdepository.com/An-Introduction-Kolmogorov-Complexity-and-Its-Applications-Li-Ming-Paul-Vitanyi/9780387339986?ref=grid-view?a_aid=rickerbh)
 - [In Love With These Times - My Life With Flying Nun Records](http://flyingout.co.nz/collections/featured-and-new/products/roger-shepherd-in-love-with-these-times)
@@ -19,6 +19,17 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
 
 ## Books I've read
+- 20170419 - [Anything You Want](https://www.bookdepository.com/Anything-You-Want-Derek-Sivers/9780241209042?a_aid=rickerbh)
+- 20170417 - [Weapons of Math Destruction](https://www.bookdepository.com/Weapons-of-Math-Destruction/9780241296813?a_aid=rickerbh)
+- 20170329 - [iWoz](https://www.bookdepository.com/iWoz/9780393330434?a_aid=rickerbh)
+- 20170323 - [Ego is the Enemy](https://www.bookdepository.com/Ego-is-the-Enemy/9781781257012?a_aid=rickerbh)
+- 20170320 - [Dune](https://www.bookdepository.com/Dune/9780340960196?a_aid=rickerbh)
+- 20170307 - [Clojure for the Brave and True](http://www.bookdepository.com/Clojure-for-the-Brave-and-True-Daniel-Higginbotham/9781593275914?a_aid=rickerbh)
+- 20170210 - [Stranger in a Strange Land](https://www.bookdepository.com/Stranger-in-a-Strange-Land/9780441790340?a_aid=rickerbh)
+- 20170130 - [Zero to One](https://www.bookdepository.com/Zero-to-One/9780753555200?a_aid=rickerbh)
+- 20170123 - [Lolita](https://www.bookdepository.com/Lolita/9780241951644?a_aid=rickerbh)
+- 20170112 - [The Lean Startup](https://www.bookdepository.com/The-Lean-Startup/9780670921607?a_aid=rickerbh)
+- 20170108 - [Brideshead Revisited](https://www.bookdepository.com/Brideshead-Revisited/9780241951613?a_aid=rickerbh)
 - 20161222 - [Brave New World](http://www.bookdepository.com/Brave-New-World/9780099477464?a_aid=rickerbh)
 - 20161216 - [The Mythical Man Month](http://www.bookdepository.com/The-Mythical-Man-month/9780201835953?a_aid=rickerbh)
 - 20161212 - [Purely Functional Data Structures](http://www.bookdepository.com/Purely-Functional-Data-Structures/9780521663502?a_aid=rickerbh)
