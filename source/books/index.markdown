@@ -12,6 +12,7 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 
 ## Books I'm reading or want to read
 - [The Clojure Cookbook](https://www.bookdepository.com/Clojure-Cookbook-Luke-VanderHart-Ryan-Neufeld/9781449366179?a_aid=rickerbh)
+- [Fermat's Last Theorem](https://www.bookdepository.com/Fermat-s-Last-Theorem/9781841157917?a_aid=rickerbh)
 - [Mathematical Logic](http://www.bookdepository.com/Mathematical-Logic/9780486425337?a_aid=rickerbh)
 - [An Introduction to Kolmogorov Complexity and its Applications](http://www.bookdepository.com/An-Introduction-Kolmogorov-Complexity-and-Its-Applications-Li-Ming-Paul-Vitanyi/9780387339986?ref=grid-view?a_aid=rickerbh)
 - [In Love With These Times - My Life With Flying Nun Records](http://flyingout.co.nz/collections/featured-and-new/products/roger-shepherd-in-love-with-these-times)
@@ -19,6 +20,7 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
 
 ## Books I've read
+- 20170504 - [4 Hour Work Week](https://www.bookdepository.com/The-4-hour-Work-Week/9780091929114?a_aid=rickerbh)
 - 20170419 - [Anything You Want](https://www.bookdepository.com/Anything-You-Want-Derek-Sivers/9780241209042?a_aid=rickerbh)
 - 20170417 - [Weapons of Math Destruction](https://www.bookdepository.com/Weapons-of-Math-Destruction/9780241296813?a_aid=rickerbh)
 - 20170329 - [iWoz](https://www.bookdepository.com/iWoz/9780393330434?a_aid=rickerbh)
