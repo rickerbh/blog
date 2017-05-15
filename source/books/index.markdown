@@ -19,6 +19,7 @@ _I'm also on [Goodreads](https://www.goodreads.com/user/show/57648038-hamish-ric
 - [A Mind for Numbers](http://www.bookdepository.com/Mind-for-Numbers-Barbar-Oakley/9780399165245?a_aid=rickerbh)
 
 ## Books I've read
+- 20170516 - [My Childhood](https://www.bookdepository.com/My-Childhood/9780241261958&a_aid=rickerbh)
 - 20170507 - [Free as in Freedom](https://www.bookdepository.com/Free-as-in-Freedom/9781449324643?a_aid=rickerbh)
 - 20170505 - [Fermat's Last Theorem](https://www.bookdepository.com/Fermat-s-Last-Theorem/9781841157917?a_aid=rickerbh)
 - 20170504 - [4 Hour Work Week](https://www.bookdepository.com/The-4-hour-Work-Week/9780091929114?a_aid=rickerbh)
