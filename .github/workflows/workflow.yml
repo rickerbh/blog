@@ -1,0 +1,27 @@
+name: publish-blog
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: DeLaGuardo/setup-graalvm@2.0
+      with:
+        graalvm-version: '19.3.1.java11'
+    - uses: DeLaGuardo/setup-clojure@2.0
+      with:
+        tools-deps: '1.10.1.469'
+    - run: lein clean && lein run
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        external_repository: rickerbh/rickerbh.github.io
+        publish_branch: master
+        cname: hamishrickerby.com
