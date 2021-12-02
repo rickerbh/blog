@@ -1,0 +1,2 @@
+server:
+	lein serve
