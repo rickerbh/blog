@@ -20,7 +20,7 @@ Then we need a way to get the input values. The file has an instruction per line
 let split_on_space x = Str.split (Str.regexp "[ ]+") x
 ```
 
-    For converting the strings into instructions, we can use a pattern match. In Haskell I'd have used a `Parser`, but I haven't done enough investigation in OCaml around specific support for this. This solution seems OK though. I've implemented an `Unknown` value to handle any instructions that don't match. None were encountered though.
+For converting the strings into instructions, we can use a pattern match. In Haskell I'd have used a `Parser`, but I haven't done enough investigation in OCaml around specific support for this. This solution seems OK though. I've implemented an `Unknown` value to handle any instructions that don't match. None were encountered though.
 
 ``` ocaml
 let direction_generator s i =
