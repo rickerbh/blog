@@ -1,4 +1,4 @@
-{:layout :post, :title "Advent of Code 2021 - Puzzle 4", :date "2021-12-03" :draft? false}
+{:layout :post, :title "Advent of Code 2021 - Puzzle 4", :date "2021-12-04" :draft? false}
 
 ## OCaml - How it's going
 
