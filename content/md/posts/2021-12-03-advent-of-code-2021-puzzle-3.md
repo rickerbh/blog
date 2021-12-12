@@ -15,7 +15,7 @@ To run (this is still painful), I need to `cd` to each directory and then `dune 
 
 This is good enough for now. There still have issues where I can't reference the library code from within the individual programs in VSCode, but it works when building.
 
-## Puzzle 3 Step 1
+## Puzzle 3 - Step 1
 
 This puzzle involves manipulating a list of strings that represent binary data as a series of `0` and `1` characters. There are a bunch of manipulation functions that I needed to create to be able to convert the string into other types for simpler manipulation. I "borrowed" some of this code from stack overflow. I guess I didn't consider this to be the essence of the puzzle, but maybe it was 🤷
 
@@ -117,7 +117,7 @@ Previously I noted that the gamma and epsilon rate calculation only differ in so
 
 `problem_3_1` will convert the string input into the true/false lists, transpose the array, and perform the frequency calculation. It then calls the calculate function with each of the sorting algos, and takes these results and multiplies them together to give the answer.
 
-## Puzzle 3 Step 2
+## Puzzle 3 - Step 2
 
 Again, this is a variant on the first puzzle. All the required helpers are the same, and the function that does the heavy lifing on calculation for each of the two values only differs by sort order. My solution for this feels a bit gross though. I'm sure there are more elegant ways to solve this. Anyway, here goes. The solution for this required calculating a result from the first bit position, and using this to filter the string values to then run the next result calculation over.
 

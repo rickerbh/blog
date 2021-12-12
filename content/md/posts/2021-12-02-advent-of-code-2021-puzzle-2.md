@@ -1,6 +1,6 @@
 {:layout :post, :title "Advent of Code 2021 - Puzzle 2", :date "2021-12-02" :draft? false}
 
-## Puzzle 2 Step 1
+## Puzzle 2 - Step 1
 
 For this puzzle, a sequence of instructions need to be interpreted and change position of a submarine. My solution here was to parse the instructions into a sequence of a custom type that encodes the instructions within the type, and then reduce over that list calculating the position of the submarine. The submarine movements can easily be interpreted via a pattern match.
 
@@ -50,7 +50,7 @@ let answer = List.map split_on_space input |> List.map convert_input |> List.fol
   answer.hpos * answer.depth
 ```
 
-## Puzzle 2, Step 2
+## Puzzle 2 - Step 2
 
 There are a couple of changes required for step 2. The first is that the custom type that represents the position of the sub needs a third datapoint to represent the aim. The second is that the movement calculation needs to be changed. No biggie.
 
