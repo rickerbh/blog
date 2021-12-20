@@ -55,7 +55,7 @@ let is_dangerous_vent t = match t with _, f when f > 1 -> true | _, _ -> false
 
 And tying it all together...
 ``` ocaml
-et problem_5_1 input =
+let problem_5_1 input =
   let lines =
     List.filter is_horizontal_or_vertical input
     |> expanded_lines |> List.flatten
