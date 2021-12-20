@@ -1,4 +1,4 @@
-{:layout :post, :title "Advent of Code 2021 - Puzzle 2", :date "2021-12-02" :draft? false}
+{:layout :post, :title "Advent of Code 2021 - Puzzle 2", :date "2021-12-02" :draft? false :tags ["aoc" "aoc2021" "ocaml"]}
 
 ## Puzzle 2 - Step 1
 

@@ -1,4 +1,4 @@
-{:layout :post, :title "Advent of Code 2021 - Puzzle 3", :date "2021-12-03" :draft? false}
+{:layout :post, :title "Advent of Code 2021 - Puzzle 3", :date "2021-12-03" :draft? false :tags ["aoc" "aoc2021" "ocaml"]}
 
 ## Preface
 
