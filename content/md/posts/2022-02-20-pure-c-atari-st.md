@@ -39,7 +39,7 @@ int main (void)
 {
     char ch;
 
-    printf("Press Return\n");
+    printf("Press return\n");
     ch = getchar();
     return(0);
 }
