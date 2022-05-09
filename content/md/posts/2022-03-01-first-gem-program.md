@@ -1,4 +1,4 @@
-{:layout :post, :title "Baby's First GEM Program", :date "2022-03-01" :draft? true :tags ["atari st" "programming" "c"]}
+{:layout :post, :title "Baby's First GEM Program", :date "2022-03-01" :draft? false :tags ["atari st" "programming" "c"]}
 
 Got my first GEM program running. It's a stripped down version of the example VDI drawing program in C-Manship. The complexities here were related to my understanding of the functions used to draw, due to the Pure-C documentation being auf Deutsch. I can read a little german, but not programmer documentation german. The port from Pure-C was fairly straightforward, with only finding the header files for functions (not all are documented), and also which libs to include being slightly time consuming.
 
