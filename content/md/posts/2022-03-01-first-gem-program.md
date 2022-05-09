@@ -61,7 +61,7 @@ void do_circle(void)
 }
 ```
 
-Not having done any GEM before, one of the things I learnt during this process was about the portability of GEM and drawing routines. GEM attempts to bastract output devices from their implementations, allowing the developer to treat an output device as an output device, regardless of where it renders. What this means in concrete terms is that when you print to a screen or a printer, the functions to do so are the same. This abstraction is really nice, and can free the dev from concerns of specific implementations in hardware. In reality, the developer totally needs to be aware of hardware nuances because of UX and quality concerns, but the API commonality across hardware devices is great.
+Not having done any GEM before, one of the things I learnt during this process was about the portability of GEM and drawing routines. GEM attempts to abstract output devices from their implementations, allowing the developer to treat an output device as an output device, regardless of where it renders. What this means in concrete terms is that when you print to a screen or a printer, the functions to do so are the same. This abstraction is really nice, and can free the dev from concerns of specific implementations in hardware. In reality, the developer totally needs to be aware of hardware nuances because of UX and quality concerns, but the API commonality across hardware devices is great.
 
 ## Project File
 
