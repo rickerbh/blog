@@ -9,14 +9,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: DeLaGuardo/setup-graalvm@5.0
+    - uses: actions/checkout@v3
+    - uses: graalvm/setup-graalvm@v1
       with:
-        graalvm: '21.0.0.2'
-        java: 'java11'
-    - uses: DeLaGuardo/setup-clojure@3.6
+        version: '21.0.0.2'
+        java-version: '11'
+        components: 'native-image'
+    - uses: DeLaGuardo/setup-clojure@10.0
       with:
         lein: latest
+    - name: Cache clojure dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.m2/repository
+          ~/.gitlibs
+          ~/.deps.clj
+        # List all files containing dependencies:
+        # key: cljdeps-${{ hashFiles('deps.edn') }}
+        # key: cljdeps-${{ hashFiles('deps.edn', 'bb.edn') }}
+        key: cljdeps-${{ hashFiles('project.clj') }}
+        # key: cljdeps-${{ hashFiles('build.boot') }}
+        restore-keys: cljdeps-
+
     - run: lein clean && lein run
 
     - name: Deploy
