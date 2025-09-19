@@ -1,0 +1,251 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+@import url("reset.css");
+@import url("typography.css");
+@import url("menu.css");
+@import url("buttons.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+pre code {
+    display: block;
+    overflow-x: auto;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    padding: 0.5em;
+    border-radius: 0;
+    font-family: monospace;
+}
+
+html {
+    height: 100%;
+    overflow: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.6;
+    background: #fff;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* ==================================================
+   Images
+================================================== */
+
+img {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    max-width: 100%;
+}
+
+img.imgfull {
+    float: left;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 0 20px 0;
+    border-top: 2px solid #000;
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 30px;
+    min-width: 280px;
+    line-height: 1.6;
+}
+
+.container .bodycontainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* ==================================================
+   Sections
+================================================== */
+
+#left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 280px;
+    background: #000;
+    color: #fff;
+    z-index: 3;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#left p#logo {
+    margin: 0 0 20px 0;
+}
+
+#left p#logo a {
+    float: left;
+    display: block;
+    padding: 30px 20px;
+    width: 100%;
+    color: #fff;
+    margin: 0 0 20px 0;
+    border-bottom: none;
+}
+
+#left p#logo a span.fa {
+    float: left;
+    display: block;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 48px;
+    margin: 0 0 10px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+#left p#logo a span.text {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#left #socialmedia ul {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+}
+
+#left #socialmedia ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 12px 0 0;
+    padding: 0;
+}
+
+#left #socialmedia ul li a {
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.6;
+    border-bottom: none;
+}
+
+#left #socialmedia ul li a:hover {
+    opacity: 1;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1240px;
+    z-index: 2;
+    padding: 40px 50px 40px 320px;
+}
+
+#right p {
+    margin: 0 0 20px 0;
+}
+
+/* Post styles */
+.post {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post-header {
+    margin-bottom: 30px;
+}
+
+.post-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 767px) {
+    #left {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #right {
+        position: relative;
+        padding: 40px 20px;
+    }
+    
+    #left #socialmedia ul {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 0 0 20px 20px;
+    }
+}
