@@ -117,10 +117,11 @@ img.imgfull {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     z-index: 1000;
     padding: 15px 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .header-container {
@@ -132,7 +133,7 @@ img.imgfull {
 }
 
 .site-logo a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     border-bottom: none;
     font-size: 24px;
@@ -160,7 +161,7 @@ img.imgfull {
     position: relative;
     width: 24px;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     transition: all 0.3s ease;
 }
 
@@ -170,7 +171,7 @@ img.imgfull {
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     transition: all 0.3s ease;
 }
 
