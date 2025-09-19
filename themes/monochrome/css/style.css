@@ -96,7 +96,6 @@ img.imgfull {
 
 .container {
     position: relative;
-    z-index: 2;
     width: 100%;
     padding: 0 30px;
     min-width: 280px;
@@ -110,96 +109,194 @@ img.imgfull {
 }
 
 /* ==================================================
-   Sections
+   Header & Navigation
 ================================================== */
 
-#left {
+.site-header {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     width: 100%;
-    max-width: 280px;
-    background: #000;
+    background-color: #000;
     color: #fff;
-    z-index: 3;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    z-index: 1000;
+    padding: 15px 30px;
 }
 
-#left p#logo {
-    margin: 0 0 20px 0;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#left p#logo a {
-    float: left;
-    display: block;
-    padding: 30px 20px;
-    width: 100%;
+.site-logo a {
     color: #fff;
-    margin: 0 0 20px 0;
+    text-decoration: none;
     border-bottom: none;
-}
-
-#left p#logo a span.fa {
-    float: left;
-    display: block;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 48px;
-    margin: 0 0 10px 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-#left p#logo a span.text {
-    float: left;
-    width: 100%;
     font-size: 24px;
-    line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-#left #socialmedia ul {
+.hamburger-menu {
+    position: relative;
+    z-index: 1001;
+}
+
+#menu-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-icon {
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon::before {
+    transform: translateY(-8px);
+}
+
+.hamburger-icon::after {
+    transform: translateY(8px);
+}
+
+.menu-open .hamburger-icon {
+    background-color: transparent;
+}
+
+.menu-open .hamburger-icon::before {
+    transform: rotate(45deg);
+}
+
+.menu-open .hamburger-icon::after {
+    transform: rotate(-45deg);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: #000;
+    z-index: 999;
+    padding: 80px 40px 40px;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mobile-menu .menu {
     margin: 0;
-}
-
-#left #socialmedia ul li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0 12px 0 0;
     padding: 0;
+    list-style: none;
 }
 
-#left #socialmedia ul li a {
-    font-size: 18px;
+.mobile-menu .menu li {
+    margin: 0 0 15px;
+}
+
+.mobile-menu .menu li a {
     color: #fff;
-    opacity: 0.6;
+    font-size: 18px;
+    text-decoration: none;
     border-bottom: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
 }
 
-#left #socialmedia ul li a:hover {
+.mobile-menu .menu li a:hover,
+.mobile-menu .menu li.active a {
     opacity: 1;
 }
 
-#right {
-    position: absolute;
+.social-links {
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.social-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links ul li {
+    margin-right: 20px;
+}
+
+.social-links ul li a {
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.6;
+    border-bottom: none;
+    transition: opacity 0.2s ease;
+}
+
+.social-links ul li a:hover {
+    opacity: 1;
+}
+
+.main-content {
+    padding: 80px 30px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-content p {
+    margin: 0 0 20px 0;
+}
+
+/* Overlay when menu is open */
+.menu-overlay {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    max-width: 1240px;
-    z-index: 2;
-    padding: 40px 50px 40px 320px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-#right p {
-    margin: 0 0 20px 0;
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Post styles */
