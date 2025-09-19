@@ -322,9 +322,13 @@ img.imgfull {
     font-weight: 700;
 }
 
-.post-meta {
+#post-meta {
     font-size: 14px;
     color: #666;
+    margin-bottom: 20px;
+}
+
+#prev-next {
     margin-bottom: 20px;
 }
 
