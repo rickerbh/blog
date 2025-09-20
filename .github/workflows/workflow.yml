@@ -3,23 +3,22 @@ name: publish-blog
 on:
   push:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
     - uses: graalvm/setup-graalvm@v1
       with:
-        version: '21.0.0.2'
-        java-version: '11'
-        components: 'native-image'
-    - uses: DeLaGuardo/setup-clojure@10.0
+        java-version: '25'
+    - uses: DeLaGuardo/setup-clojure@13.4
       with:
         lein: latest
     - name: Cache clojure dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.m2/repository
@@ -35,9 +34,9 @@ jobs:
     - run: lein clean && lein run
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         external_repository: rickerbh/rickerbh.github.io
-        publish_branch: master
-        cname: hamishrickerby.com
+        publish_branch: main
+        publish_dir: ./public

@@ -1,7 +1,7 @@
 {:site-title                   "Hamish Rickerby"
  :author                       "Hamish Rickerby"
  :description                  "Hamish Rickerby's blog. I write about software and technology in general."
- :site-url                     "https://hamishrickerby.com"
+ :site-url                     "https://hamishrickerby.com/"
  :post-root                    "posts"
  :page-root                    "pages"
  :post-root-uri                "posts"
