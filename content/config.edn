@@ -20,7 +20,7 @@
  :theme                        "monochrome"
  :resources                    ["img" "wp-content"]
  :keep-files                   [".git"]
- :disqus?                      true
+ :disqus?                      false
  :disqus-shortname             "itickedthewrongbox"
  :ignored-files                [#"\.#.*" #".*\.swp$"]
  :previews?                    false

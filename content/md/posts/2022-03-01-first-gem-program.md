@@ -79,7 +79,7 @@ PCGEMLIB.LIB
 
 And the output
 
-![](./img/gem-1.png)
+![](../../img/gem-1.png)
 
 This only shows 4 colours due to ST-Medium resolution. ST-Low should show the full 8, but I use mono when developing so more text can fit on screen at once - that just shows a single black circle.
 

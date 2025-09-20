@@ -16,7 +16,7 @@ I chose Pure-C due to a couple of posts in forums. The sensible options seemed t
 
 First step - unzip pure-c and install it in a directory on your ST. Then run `pc.prg`.
 
-![](./img/pc-prg.png)
+![](../../img/pc-prg.png)
 
 ### Configuration
 
@@ -24,9 +24,9 @@ Pure-C needs to know a couple of things to be able to build applications. It nee
 
 At a minimum, you need to set the Include directory (header files) for in the `Options -> Compiler` menu, and the Library directory (LIB files) in `Options -> Linker`. Once there are done, you're ready to code.
 
-![](./img/compiler-options.png)
+![](../../img/compiler-options.png)
 
-![](./img/linker-options.png)
+![](../../img/linker-options.png)
 
 ### Coding
 
@@ -63,12 +63,12 @@ PCSTDLIB.LIB
 
 The 3 files that are needed to build the executable are `PCSTART.O` (startup module), `pressret.c` (my code), and `PCSTDLIB.LIB` (the standard library - which provides the functions from `stdio.h`).
 
-![](./img/prj-contents.png)
+![](../../img/prj-contents.png)
 
 All the Pure-C libraries are in the `lib` directory within the Pure-C directory. The way I connected the use of stdio.h to `PDSTDLIB.LIB` was through the documentation. `Help -> Libraries`, and you don't have to read German perfectly to figure it out. The top page connects the files to general areas, and the details show which functions are in those libraries, and which headers need to be imported.
 
-![](./img/help-libraries.png)
-![](./img/help-stdlib.png)
+![](../../img/help-libraries.png)
+![](../../img/help-stdlib.png)
 
 Project files can get much more complex, with submodules and multiple dependencies. Check the `Pure C English Overview` available in `PURE_C.TXT` in initial link to Pure C up the top of this post.
 
@@ -76,10 +76,10 @@ Project files can get much more complex, with submodules and multiple dependenci
 
 Once all that setup is done in the project file, the application executable should be able to be built and run.  `Project -> Select` to choose the project file to use, and then `Project -> Make All` to make the application, or `Project -> Run` to make and run.
 
-![](./img/project-select.png)
+![](../../img/project-select.png)
 
 Behold the majesty!
 
-![](./img/running-pressret.png)
+![](../../img/running-pressret.png)
 
 Hope that helps. I want to document more of the GEM programming journey as well. I plan on doing this by running through the C-Manship book - fingers crossed I find the time.
