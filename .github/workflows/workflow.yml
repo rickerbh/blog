@@ -2,7 +2,7 @@ name: publish-blog
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
